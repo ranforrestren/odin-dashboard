@@ -1,0 +1,32 @@
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0px;
+  background: #44403c;
+}
+
+#container {
+  place-self: center;
+  height: 800px;
+  width: 1200px;
+  display: grid;
+  grid-template: 1fr 5fr / 1fr 4fr;
+  grid-template-areas: 
+  "sidebar header"
+  "sidebar content"
+}
+
+#header {
+  grid-area: header;
+  background: #e7e5e4;
+}
+
+#sidebar {
+  grid-area: sidebar;
+  background: #a8a29e;
+}
+
+#main-content {
+  grid-area: content;
+  background: #fafaf9;
+}
