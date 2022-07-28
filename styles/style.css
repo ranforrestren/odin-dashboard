@@ -15,7 +15,7 @@ body {
   height: 800px;
   width: 1200px;
   display: grid;
-  grid-template: 1fr 5fr / 1fr 4fr;
+  grid-template: 1fr 4fr / 1fr 4fr;
   grid-template-areas: 
   "sidebar header"
   "sidebar content"
@@ -26,17 +26,50 @@ body {
   background: #fafaf9;
   display: grid;
   grid-template: 1fr 1fr / 1fr; 
-  padding: 0px 30px;
+  padding: 10px 60px 10px 30px;
+  font-weight: 600;
 }
 
 #headerupper {
   display: grid;
-  grid-template: 1fr / 60px 1fr 60px 60px 200px;
-  place-items: center;
+  grid-template: 1fr / 20px 1fr 20px 54px 120px;
+  gap: 20px;
+  align-items: center;
 }
 
 #headerupper > div {
-  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#headerlower {
+  display: grid;
+  grid-template: 1fr / 54px 1fr repeat(3, 80px);
+  gap: 20px;
+  align-items: center;
+}
+
+#headerlower .button {
+  background: #34d399;
+  height: 36px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  color: #fafaf9;
+}
+
+#welcome {
+  display: grid;
+  grid-template: 0.8rem 1fr / 1fr;
+  gap: 0.5rem;
+}
+
+#welcome #welcomeupper {
+  font-size: 0.8rem;
+}
+
+#welcome #welcomelower {
+  font-size: 1.5rem;
 }
 
 #sidebar {
@@ -56,14 +89,18 @@ body {
   margin-bottom: 30px;
 }
 
+#sidebar h1 {
+  font-size: 1.5em;
+}
+
 #sidebar img {
   filter: invert(100%);
 }
 
 #sidebar > #home > img {
   justify-self: center;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
 }
 
 #sidebar > ul > li {
@@ -79,14 +116,22 @@ body {
 
 img.icon {
   justify-self: center;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 img.smallavi {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
+  justify-self: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+}
+
+img.largeavi {
+  justify-self: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 27px;
 }
 
 #searchbar {
@@ -95,4 +140,9 @@ img.smallavi {
   margin-right: 60px;
   background: #e7e5e4;
   border-radius: 15px;
+}
+
+.shadow {
+  box-shadow: 0px 6px 4px -4px #a8a29e;
+  z-index: 1;
 }
