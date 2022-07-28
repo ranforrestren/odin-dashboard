@@ -49,6 +49,8 @@ body {
 
 #sidebar > ul > li {
   margin: 10px 0px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 #sidebar > ul > img {
