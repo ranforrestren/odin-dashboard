@@ -12,10 +12,10 @@ body {
 
 #container {
   place-self: center;
-  height: 800px;
-  width: 1200px;
+  height: 877px;
+  width: 1233px;
   display: grid;
-  grid-template: 1fr 4fr / 1fr 4fr;
+  grid-template: 1fr 5fr / 1fr 4fr;
   grid-template-areas: 
   "sidebar header"
   "sidebar content"
@@ -89,10 +89,6 @@ body {
   margin-bottom: 30px;
 }
 
-#sidebar h1 {
-  font-size: 1.5em;
-}
-
 #sidebar img {
   filter: invert(100%);
 }
@@ -112,6 +108,45 @@ body {
 #main-content {
   grid-area: content;
   background: #e7e5e4;
+  display: grid;
+  grid-template: 1fr 1fr / 3fr 1fr;
+  grid-template-areas:
+  "projects announcements"
+  "projects trending";
+  gap: 20px;
+  padding: 20px 20px 60px 20px;
+}
+
+#main-content > div {
+  display: grid;
+  grid-template: auto 1fr / 1fr;
+}
+
+#main-content > #projects {
+  grid-area: projects;
+}
+
+#main-content > #announcements {
+  grid-area: announcements;
+}
+
+#main-content > #trending {
+  grid-area: trending;
+}
+
+#main-content #projectscontainer {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 20px;
+}
+
+#main-content div.content {
+  background: #fafaf9;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 1.2em;
 }
 
 img.icon {
