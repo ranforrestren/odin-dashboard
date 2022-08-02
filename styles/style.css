@@ -142,7 +142,29 @@ body {
 
 #main-content div.content {
   background: #fafaf9;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+
+#main-content div.card {
+  display: grid;
+  grid-template: 1fr 20px / 1fr;
+  border-left: 8px solid #fbbf24;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #78716c;
+}
+
+#main-content div.card h2 {
+  margin: 0px;
+  font-size: 1rem;
+  color: black;
+}
+
+#main-content div.iconrow {
+  justify-self: end;
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  gap: 20px;
 }
 
 h1 {
